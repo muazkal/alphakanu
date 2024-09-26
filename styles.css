@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins;
+  background-color: #1f1f1f;
+  color: white;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.logo {
+  font-size: 45px;
+  letter-spacing: 13px;
+  text-align: center;
+  text-shadow: 0 15px 50px white;
+}
+
+.social-links li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center ;
+  gap: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+
+@media (max-width: 1200px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icon img {
+    width: 100%;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+@media (max-width: 1200px) {
+  .links {
+    flex-direction: column;
+  }
+}
+
+span {
+  text-decoration: underline;
+  text-decoration-color: #0101b3;
+}
+
+.img-story img {
+  max-width: 600px;
+  object-fit: cover;
+}
+
+.t-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 900px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.img-story {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+@media (max-width: 1200px) {
+  .img-story {
+    flex-direction: column;
+  }
+  .img-story img {
+    width: 100%;
+  }
+  .t-p {
+    padding: 0;
+  }
+}
+
+#my-story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.yt-vid {
+  background-color: rgb(242, 244, 243);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-shadow: 0px 10px 40px black;
+  font-size: 40px;
+  width: 100%;
+}
+
+.yt-vid iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .yt-vid {
+    width: 100%;
+  }
+
+  .yt-vid h2 {
+    font-size: 100%;
+  }
+}
+
+#services {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+@media (max-width: 1200px) {
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.service {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+}
+
+#newsletter {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+/* Smooth transition for fade-in effect */
+/* Initial state - elements are hidden */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+/* Initial state - elements are hidden */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+/* When the element is visible */
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
